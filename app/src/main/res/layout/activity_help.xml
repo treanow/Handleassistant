@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <com.letv.handleassistant.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:在哪里可以买到乐视互娱手柄?" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/help_tv_height"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="A:"
+                        android:textColor="@color/help_tv_color"
+                        android:textSize="@dimen/help_tv_size" />
+
+                    <TextView
+                        android:id="@+id/tv_go_buy"
+                        android:layout_width="70dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/selector_buy"
+                        android:gravity="center"
+                        android:text="京东商城"
+                        android:textColor="@color/help_tv_color"
+                        android:textSize="@dimen/help_tv_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/home_line_style" />
+
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:乐视互娱手柄助手支持哪些手机?" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="A:本助手支持Android4.0版本以上手机" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:paddingLeft="@dimen/help_some_tv_left"
+                    android:text="Android4.0以下版本暂不支持" />
+            </LinearLayout>
+            <View style="@style/home_line_style" />
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:乐视互娱手柄助手可以用映射玩哪些游戏?" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="A:支持触屏操作的游戏都可以用映射的方式玩,如全民突击" />
+            </LinearLayout>
+            <View style="@style/home_line_style" />
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:必须从助手中打开游戏才可实现映射功能吗?" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="A:是的" />
+            </LinearLayout>
+            <View style="@style/home_line_style" />
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:连接手柄后,打开助手提示手柄未连接?" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="A:解决方案:" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:paddingLeft="@dimen/help_some_tv_left"
+                    android:text="1.设置->安全->应用程序许可->手柄助手->开启自动运行功能(三星新款手机)" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:paddingLeft="@dimen/help_some_tv_left"
+                    android:text="2.运行一次手柄游戏厅" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:paddingLeft="@dimen/help_some_tv_left"
+                    android:text="关闭手柄,在打开手柄回连手机" />
+            </LinearLayout>
+            <View style="@style/home_line_style" />
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:用助手映射功能需要root吗?" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="A:不需要" />
+            </LinearLayout>
+            <View style="@style/home_line_style" />
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:如果手机已root,还需连接PC启动映射功能吗?" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="A:如果手机已root,授权助手root权限就可实现映射" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:paddingLeft="@dimen/help_some_tv_left"
+                    android:text="无需连接PC即可激活映射功能" />
+            </LinearLayout>
+            <View style="@style/home_line_style" />
+            <LinearLayout style="@style/help_ll_style">
+
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="Q:为什么手机重启后映射无效果?" />
+                <TextView
+                    style="@style/help_tv_style"
+                    android:text="A:手机重启后,需要重新开启触屏映射" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.letv.handleassistant.widget.ReboundScrollView>
+</LinearLayout>

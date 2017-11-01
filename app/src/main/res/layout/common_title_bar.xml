@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/common_title_bar_all"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/common_title_bar_height"
+    android:background="@color/blue_simple">
+
+    <TextView
+        android:id="@+id/tv_title_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="默认标题"
+        android:textColor="@color/white"
+        android:textSize="@dimen/title_size" />
+
+    <LinearLayout
+        android:id="@+id/ll_title_bar_left"
+        android:layout_width="@dimen/common_title_bar_height"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_left"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_title_bar_left"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/arrow_back"
+            android:visibility="gone" />
+
+       <!-- <cn.its.wiseparking.widget.CircleImageView
+            android:id="@+id/civ_headImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:src="@mipmap/ic_launcher"
+            android:visibility="gone" />-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_title_bar_right"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/selector_left"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/tv_title_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_title_bar_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

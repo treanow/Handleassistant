@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">"乐视手柄助手 "</string>
+    <string name="network_is_not_available">网络不可用，请检查网络连接!</string>
+    <string name="server_error">服务器连接失败</string>
+</resources>

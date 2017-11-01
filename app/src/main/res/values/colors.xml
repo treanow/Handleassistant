@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="red">#FF0000</color>
+    <color name="red_half">#ff6765</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#516EAC</color>
+    <color name="blue_deep">#2174bc</color>
+    <color name="blue_simple">#1dadff</color>
+    <color name="blue_simple_half">#516EAC</color>
+    <color name="blue_my_simple">#30B1E7</color>
+    <color name="black">#333333</color>
+    <color name="black2">#666666</color>
+    <color name="black_normal">#4c4c4c</color>
+    <color name="deep_black">#000000</color>
+    <color name="default_color">#333333</color>
+    <color name="white">#FFFFFF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="orange">#f99936</color>
+    <color name="pink">#FF00FF</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_half_05">#05000000</color>
+    <color name="transparent_half_10">#10000000</color>
+    <color name="gray">#999999</color>
+    <color name="gray_simple">#f2f4f7</color>
+    <color name="all_background">#f2f4f7</color>
+    <color name="help_tv_color">#666666</color>
+</resources>

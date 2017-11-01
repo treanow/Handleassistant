@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title_bar" />
+
+    <com.letv.handleassistant.widget.ReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/no_root_item_height"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    style="@style/no_root_tv_style"
+                    android:text="到乐视手柄官网下载电脑端免root工具包" />
+            </LinearLayout>
+
+            <View style="@style/home_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/no_root_item_height"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    style="@style/no_root_tv_style"
+                    android:text="安装乐视手柄助手,并运行一次(初始化)" />
+            </LinearLayout>
+
+            <View style="@style/home_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/no_root_item_height"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    style="@style/no_root_tv_style"
+                    android:text="手机开启USB调试功能:\n设置->开发者选项->勾选USB调试" />
+            </LinearLayout>
+
+            <View style="@style/home_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/no_root_item_height"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    style="@style/no_root_tv_style"
+                    android:text="手机连接电脑,安装手机驱动" />
+            </LinearLayout>
+
+            <View style="@style/home_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/no_root_item_height"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    style="@style/no_root_tv_style"
+                    android:text="将XXXBat文件夹拷贝至电脑任意目录\n运行文件夹内的Start.bat文件" />
+            </LinearLayout>
+
+            <View style="@style/home_line_style" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    style="@style/no_root_tv_style"
+                    android:text="等待运行结果\n1.最后一行“InjectService:start success!”:成功\n2.最后一行“请按任意键继续..”:失败\n3.失败解决:参阅《使用前必读.pdf》" />
+            </LinearLayout>
+        </LinearLayout>
+    </com.letv.handleassistant.widget.ReboundScrollView>
+</LinearLayout>

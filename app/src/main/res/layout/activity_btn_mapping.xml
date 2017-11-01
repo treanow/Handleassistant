@@ -1,0 +1,440 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_p_btn_num"
+                style="@style/btn_mapping_top_style"
+                android:text="P:0/1" />
+
+            <View style="@style/btn_mapping_top_line" />
+
+            <TextView
+                android:id="@+id/tv_dx"
+                style="@style/btn_mapping_top_style"
+                android:text="dX:100.0" />
+
+            <View style="@style/btn_mapping_top_line" />
+
+            <TextView
+                android:id="@+id/tv_dy"
+                style="@style/btn_mapping_top_style"
+                android:text="dY:100.0" />
+
+            <View style="@style/btn_mapping_top_line" />
+
+            <TextView
+                android:id="@+id/tv_Xv"
+                style="@style/btn_mapping_top_style"
+                android:text="Xv:38" />
+
+            <View style="@style/btn_mapping_top_line" />
+
+            <TextView
+                android:id="@+id/tv_Yv"
+                style="@style/btn_mapping_top_style"
+                android:text="Yv:42" />
+
+            <View style="@style/btn_mapping_top_line" />
+
+            <TextView
+                android:id="@+id/tv_prs"
+                style="@style/btn_mapping_top_style"
+                android:text="Prs:1.00" />
+
+            <View style="@style/btn_mapping_top_line" />
+
+            <TextView
+                android:id="@+id/tv_size"
+                style="@style/btn_mapping_top_style"
+                android:text="Size:0.03" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="@dimen/btn_mapping_ll_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_btn_l2"
+                    style="@style/btn_mapping_btn_style"
+                    android:src="@mipmap/btn_l2" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_l1"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/btn_l1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_progress_l2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_l2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="5dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/hor_progress_style" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar_r2"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="100dp"
+                    android:layout_height="5dp"
+                    android:layout_marginTop="2dp"
+                    android:max="100"
+                    android:progress="0"
+                    android:progressDrawable="@drawable/hor_progress_style" />/>
+
+                <TextView
+                    android:id="@+id/tv_progress_r2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="@dimen/btn_mapping_ll_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/btn_r2" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:src="@mipmap/btn_r1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="@dimen/btn_mapping_ll_width"
+                android:layout_height="@dimen/btn_mapping_ll_width">
+
+                <View
+                    android:id="@+id/view_left"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_up"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_above="@id/view_left"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_up" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_down"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_below="@id/view_left"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_down" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_left"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/view_left"
+                    android:src="@mipmap/btn_left" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_right"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/view_left"
+                    android:src="@mipmap/btn_right" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/btn_mapping_ll_width"
+                android:layout_height="@dimen/btn_mapping_ll_width">
+
+                <View
+                    android:id="@+id/view_right"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerInParent="true"
+                    android:background="@color/transparent" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_y"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_above="@id/view_right"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_y" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_a"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_below="@id/view_right"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_a" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_x"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/view_right"
+                    android:src="@mipmap/btn_x" />
+
+                <ImageView
+                    android:id="@+id/iv_btn_b"
+                    style="@style/btn_mapping_btn_style"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/view_right"
+                    android:src="@mipmap/btn_b" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="@dimen/joystick_mapping_ll_width"
+                android:layout_height="@dimen/joystick_mapping_ll_width"
+                android:layout_marginLeft="@dimen/btn_mapping_joystick_margain">
+
+                <ImageView
+                    android:id="@+id/iv_joystick_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/joystick_left" />
+
+                <TextView
+                    android:id="@+id/tv_left_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="中"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_left_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/iv_joystick_left"
+                    android:layout_centerHorizontal="true"
+                    android:text="上"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_left_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_joystick_left"
+                    android:layout_centerHorizontal="true"
+                    android:text="下"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_left_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_joystick_left"
+                    android:text="左"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_left_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_joystick_left"
+                    android:text="右"
+                    android:textSize="@dimen/joystick_tv_size" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="@dimen/joystick_mapping_ll_width"
+                android:layout_height="@dimen/joystick_mapping_ll_width"
+                android:layout_marginRight="@dimen/btn_mapping_joystick_margain">
+
+                <ImageView
+                    android:id="@+id/iv_joystick_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/joystick_right" />
+
+                <TextView
+                    android:id="@+id/tv_right_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="中"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_right_up"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/iv_joystick_right"
+                    android:layout_centerHorizontal="true"
+                    android:text="上"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_right_down"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_joystick_right"
+                    android:layout_centerHorizontal="true"
+                    android:text="下"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_right_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/iv_joystick_right"
+                    android:text="左"
+                    android:textSize="@dimen/joystick_tv_size" />
+
+                <TextView
+                    android:id="@+id/tv_right_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/iv_joystick_right"
+                    android:text="右"
+                    android:textSize="@dimen/joystick_tv_size" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:layout_width="@dimen/btn_mapping_ll_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_btn_back"
+                    style="@style/btn_mapping_btn_style"
+                    android:src="@mipmap/btn_back" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical" />
+
+            <LinearLayout
+                android:layout_width="@dimen/btn_mapping_ll_width"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_btn_start"
+                    style="@style/btn_mapping_btn_style"
+                    android:src="@mipmap/btn_start" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <com.letv.handleassistant.widget.TouchDebugView
+            android:id="@+id/sv_touch"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/blue_simple"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="名称:" />
+
+            <TextView
+                android:id="@+id/tv_is_test"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="200dp"
+                android:background="@drawable/selector_btn_ticket"
+                android:gravity="center"
+                android:text="测试" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

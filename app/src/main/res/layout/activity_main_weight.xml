@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="标题" />
+    <View style="@style/home_line_style" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开启触屏映射" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="触屏映射尚未开启"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <View style="@style/home_line_style" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="未连接" />
+    </LinearLayout>
+    <View style="@style/home_line_style" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:text="开始游戏" />
+    </LinearLayout>
+    <View style="@style/home_line_style" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:text="本助手可帮助用户实现按键触屏映射,操作步骤如下:"
+            style="@style/home_text_style" />
+
+        <TextView
+            style="@style/home_text_style"
+            android:text="1.确认映射功能开启" />
+
+        <TextView
+            style="@style/home_text_style"
+            android:text="2.连接新游智能游戏手柄" />
+
+        <TextView
+            style="@style/home_text_style"
+            android:text="3.点击开始游戏" />
+
+        <TextView
+            style="@style/home_text_style"
+            android:text="注: 在游戏画面,按游戏i键启动按键映射" />
+    </LinearLayout>
+</LinearLayout>
